@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const button = document.getElementById("button");
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -10,4 +11,12 @@ function makeRows(rows, cols) {
   };
 };
 
+
 makeRows(4, 4);
+
+function gridAdjustment() {
+    const inputRowNum = prompt('Enter number of Rows:'); // get user's row num
+    if (!inputRowNum || inputRowNum > 100) return alert(`Invalid Input!`)
+    const inputColumnNum = prompt('Enter number of Column:'); // get user's column num
+    makeRows(inputRowNum, inputColumnNum)
+}

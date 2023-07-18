@@ -19,3 +19,7 @@
   .grid-item:hover {
     background-color: yellow;
   }
+
+  button{
+    align-self: center;
+  }
